@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6776a35-1b6c-4937-a72d-19092e397f50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/simple/algorithm/graph/ListDG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/simple/algorithm/graph/DGGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,9 +69,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="ListDG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.simple.algorithm.graph.ListDG" />
+  <component name="RunManager" selected="Application.DGGraph">
+    <configuration name="DGGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.simple.algorithm.graph.DGGraph" />
       <module name="simple-algorithm" />
       <extension name="coverage">
         <pattern>
@@ -86,8 +83,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ListDG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.simple.algorithm.graph.ListDG" />
+      <module name="simple-algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.simple.algorithm.graph.DGGraph" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DGGraph" />
         <item itemvalue="Application.ListDG" />
       </list>
     </recent_temporary>
@@ -106,8 +117,16 @@
       <workItem from="1574950649293" duration="95000" />
       <workItem from="1575040682660" duration="80000" />
       <workItem from="1575725267200" duration="9625000" />
-      <workItem from="1575742685441" duration="122000" />
+      <workItem from="1575742685441" duration="8582000" />
     </task>
+    <task id="LOCAL-00001" summary="add .ignore">
+      <created>1575742825230</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575742825230</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,5 +144,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add .ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add .ignore" />
   </component>
 </project>
