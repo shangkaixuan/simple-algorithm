@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6776a35-1b6c-4937-a72d-19092e397f50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/simple/algorithm/graph/DGGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -117,7 +116,8 @@
       <workItem from="1574950649293" duration="95000" />
       <workItem from="1575040682660" duration="80000" />
       <workItem from="1575725267200" duration="9625000" />
-      <workItem from="1575742685441" duration="8582000" />
+      <workItem from="1575742685441" duration="8677000" />
+      <workItem from="1576162002854" duration="133000" />
     </task>
     <task id="LOCAL-00001" summary="add .ignore">
       <created>1575742825230</created>
@@ -126,7 +126,21 @@
       <option name="project" value="LOCAL" />
       <updated>1575742825230</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add .ignore">
+      <created>1575814711612</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575814711612</updated>
+    </task>
+    <task id="LOCAL-00003" summary="topologicalSort 拓扑排序">
+      <created>1575814748698</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575814748698</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +161,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add .ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add .ignore" />
+    <MESSAGE value="topologicalSort 拓扑排序" />
+    <option name="LAST_COMMIT_MESSAGE" value="topologicalSort 拓扑排序" />
   </component>
 </project>
