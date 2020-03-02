@@ -40,7 +40,7 @@ public class DGGraph {
                     '}';
         }
     }
-    
+
     /**
      * 边
      */
@@ -228,10 +228,55 @@ public class DGGraph {
         // 打印排序结果
         System.out.print("=== TopSort: ");
         for (int i = 0; i < mVexs.size(); i++) {
-            System.out.printf("%s ", tops[i]);
+            System.out.printf("%s ", tops[i].name);
         }
         System.out.print("\n");
         return 0;
+    }
+
+    /**
+     * 深度便利找环
+     */
+    public boolean dsfFindCycle() {
+        Stack<String> stack = new Stack<>();
+        boolean[] visited = new boolean[mVexs.size()];
+        for (int i = 0; i < mVexs.size(); i++) {
+            visited[i] = false;
+        }
+
+        for (int i = 0; i < mVexs.size(); i++) {
+            if (!visited[i]) {
+                stack.push(mVexs.get(i).data.name);
+                if (dts(i, visited, stack)) {
+                    System.out.println("=== dts：" + stack);
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    private boolean dts(int i, boolean[] visited, Stack<String> stack) {
+        Edge edge;
+
+        visited[i] = true;
+
+        edge = mVexs.get(i).firstEdge;
+        while (null != edge) {
+            if (!visited[edge.ivex]) {
+                stack.push(mVexs.get(edge.ivex).data.name);
+                if (dts(edge.ivex, visited, stack)) {
+                    return true;
+                }
+            } else {
+                if (stack.search(mVexs.get(edge.ivex).data.name) > 0) {
+                    stack.push(mVexs.get(edge.ivex).data.name);
+                    return true;
+                }
+            }
+            edge = edge.nextEdge;
+        }
+        return false;
     }
 
     public static void main(String[] args) {
@@ -249,13 +294,15 @@ public class DGGraph {
                 {vexs[2], vexs[3]},
                 {vexs[2], vexs[5]},
                 {vexs[2], vexs[6]},
-                {vexs[4], vexs[2]},
+                {vexs[4], vexs[6]},
                 // 回路测试
                 // {vexs[3], vexs[0]}
         };
 
         DGGraph graph = new DGGraph(vexs, edges);
         graph.print();
+        boolean hasCycle = graph.dsfFindCycle();
+        System.out.println("是否有环: " + hasCycle);
         int result = graph.topologicalSort();
         System.out.printf("=== topologicalSort result: %d", result);
         System.out.print("\n");
